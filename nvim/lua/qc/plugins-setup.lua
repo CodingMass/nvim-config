@@ -31,7 +31,7 @@ return packer.startup(function(use)
 
 	use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
 
-	use("bluz71/vim-nightfly-guicolors") -- colorscheme
+	use({ "bluz71/vim-nightfly-guicolors", commit = "c4d8b18" }) -- colorscheme
 
 	use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
 

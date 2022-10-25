@@ -4,6 +4,9 @@ local opt = vim.opt -- for conciseness
 opt.relativenumber = true
 opt.number = true
 
+-- mouse
+opt.mouse = 'a'
+
 -- tabs & indentation
 opt.tabstop = 4
 opt.shiftwidth = 4
@@ -16,7 +19,6 @@ opt.wrap = false
 -- search settings
 opt.ignorecase = true
 opt.smartcase = true
-
 
 -- cursor line
 opt.cursorline = true
