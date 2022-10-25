@@ -1,4 +1,4 @@
- -- import mason plugin safely
+-- import mason plugin safely
 local mason_status, mason = pcall(require, "mason")
 if not mason_status then
 	return
@@ -16,17 +16,16 @@ if not mason_null_ls_status then
 	return
 end
 
-
 mason.setup()
 mason_lspconfig.setup({
-    ensure_installed = ({
+	ensure_installed = {
 		"tsserver",
 		"html",
 		"cssls",
 		"tailwindcss",
 		"sumneko_lua",
-        "pyright"
-	})
+		"pyright",
+	},
 })
 
 mason_null_ls.setup({
@@ -35,6 +34,7 @@ mason_null_ls.setup({
 		"prettier", -- ts/js formatter
 		"stylua", -- lua formatter
 		"eslint_d", -- ts/js linter
+		"autopep8", -- python formatter
 	},
 	-- auto-install configured formatters & linters (with null-ls)
 	automatic_installation = true,

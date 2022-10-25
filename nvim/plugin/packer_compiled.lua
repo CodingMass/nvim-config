@@ -231,6 +231,11 @@ _G.packer_plugins = {
     path = "/home/qc/.local/share/nvim/site/pack/packer/start/typescript.nvim",
     url = "https://github.com/jose-elias-alvarez/typescript.nvim"
   },
+  ["vim-coloresque"] = {
+    loaded = true,
+    path = "/home/qc/.local/share/nvim/site/pack/packer/start/vim-coloresque",
+    url = "https://github.com/gorodinskiy/vim-coloresque"
+  },
   ["vim-maximizer"] = {
     loaded = true,
     path = "/home/qc/.local/share/nvim/site/pack/packer/start/vim-maximizer",

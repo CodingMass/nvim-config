@@ -43,6 +43,7 @@ return packer.startup(function(use)
 
 	-- commenting with gc
 	use("numToStr/Comment.nvim")
+
 	-- file explorer
 	use("nvim-tree/nvim-tree.lua")
 
@@ -105,7 +106,11 @@ return packer.startup(function(use)
 		end,
 	})
 
+	-- tagbar
 	use("preservim/tagbar")
+
+	-- coloresque
+	use("gorodinskiy/vim-coloresque")
 
 	if packer_bootstrap then
 		require("packer").sync()
