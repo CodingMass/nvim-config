@@ -5,7 +5,7 @@ opt.relativenumber = true
 opt.number = true
 
 -- mouse
-opt.mouse = 'a'
+opt.mouse = "a"
 
 -- tabs & indentation
 opt.tabstop = 4
