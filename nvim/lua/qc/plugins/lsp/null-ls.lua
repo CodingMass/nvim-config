@@ -34,14 +34,13 @@ null_ls.setup({
 				group = augroup,
 				buffer = bufnr,
 				callback = function()
-					-- vim.lsp.buf.format({
-					-- 	filter = function(client)
-					-- 		--  only use null-ls for formatting instead of lsp server
-					-- 		return client.name == "null-ls"
-					-- 	end,
-					-- 	bufnr = bufnr,
-					-- })
-					vim.lsp.buf.formatting_sync()
+					vim.lsp.buf.format({
+						filter = function(client)
+							--  only use null-ls for formatting instead of lsp server
+							return client.name == "null-ls"
+						end,
+						bufnr = bufnr,
+					})
 				end,
 			})
 		end
