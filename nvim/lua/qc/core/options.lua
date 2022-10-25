@@ -39,3 +39,11 @@ opt.splitright = true
 opt.splitbelow = true
 
 opt.iskeyword:append("-")
+
+function ToggleMouse()
+	if vim.api.nvim_get_option("mouse") == "a" then
+		vim.api.nvim_set_option("mouse", "")
+	else
+		vim.api.nvim_set_option("mouse", "a")
+	end
+end
